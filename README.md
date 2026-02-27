@@ -1,5 +1,104 @@
-# C++
-Aulas de C++ 
+# 📘 Estudando C++
 
-Comandos Basicos 
+Repositório com exercícios e exemplos práticos para aprendizado da linguagem C++.
 
+---
+
+## ▶️ Como Compilar e Executar
+
+### 🔹 Linux / Mac
+
+```bash
+g++ Aula2.cpp -o Aula2 && ./Aula2
+```
+
+### 🔹 Windows (MinGW)
+
+```bash
+g++ Aula2.cpp -o Aula2.exe
+Aula2.exe
+```
+
+📌 Explicação:
+- `g++` → Compilador C++
+- `Aula2.cpp` → Arquivo fonte
+- `-o Aula2` → Nome do executável
+- `./Aula2` → Executa o programa
+
+---
+
+# 📚 Biblioteca `<string>`
+
+A biblioteca `<string>` permite trabalhar com textos (strings) de forma segura e moderna em C++.
+
+## 🔹 Como incluir
+
+```cpp
+#include <string>
+```
+
+## 🔹 Declarando uma string
+
+```cpp
+std::string nome = "Carlos";
+```
+
+---
+
+# 📌 Principais Funções da std::string
+
+## 📏 Capacidade
+- `size()` / `length()` → Retorna o tamanho da string
+- `empty()` → Verifica se está vazia
+- `clear()` → Limpa o conteúdo
+- `capacity()` → Retorna a capacidade alocada
+
+## 🔎 Acesso
+- `at(pos)` → Acessa com verificação de limite
+- `operator[]` → Acesso direto
+- `front()` → Primeiro caractere
+- `back()` → Último caractere
+- `c_str()` → Retorna `const char*`
+
+## ✏️ Modificação
+- `append()` → Adiciona ao final
+- `push_back()` → Adiciona um caractere
+- `insert()` → Insere em posição específica
+- `erase()` → Remove parte da string
+- `replace()` → Substitui parte da string
+- `pop_back()` → Remove último caractere
+
+## 🔍 Busca
+- `find()` → Procura substring
+- `rfind()` → Procura da direita
+- `substr()` → Retorna parte da string
+- `compare()` → Compara duas strings
+
+---
+
+# 🧪 Exemplo
+
+```cpp
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string nome = "Carlos";
+
+    nome.append(" Silva");
+
+    std::cout << "Nome: " << nome << std::endl;
+    std::cout << "Tamanho: " << nome.length() << std::endl;
+
+    return 0;
+}
+```
+
+---
+
+# 🎯 Objetivo
+
+✔ Aprender C++  
+✔ Praticar lógica de programação  
+✔ Entender a biblioteca padrão  
+✔ Evoluir para estruturas de dados  
